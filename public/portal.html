@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Smile Cooperative Nigeria</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="assets/logo.png" type="image/png">
+</head>
+
+ 
+
+
+<body>
+  <header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="logo">
+      <img src="assets/logo.png" alt="Smile Cooperative Logo">
+    </a>
+
+     <nav class="main-nav" id="mainNav">
+     <button id="openChangePasswordBtn" class="btn-view">Change Password</button>
+
+    </nav>
+
+   
+
+    
+  
+
+  </div>
+</header>
+
+  <div class="container portal-container">
+    <header class="portal-head">
+      <h1>Your Financial Portal</h1>
+      <div class="controls">
+        <label class="small" for="yearSelect">Show history up to:</label>
+        <select id="yearSelect" aria-label="Select end year"></select>
+        <button id="refreshBtn" class="btn">Refresh</button>
+        <button id="logoutBtn" class="btn">Logout</button>
+      </div>
+    </header>
+
+    <div id="summary" class="card">
+      <div id="welcome" class="small">Loading your data…</div>
+      <div class="grid" id="statsGrid" aria-live="polite"><header>
+  Welcome back, <span id="username"></span>!
+</header>
+</div>
+    </div>
+
+    <div class="card" style="margin-top:1rem">
+      <h2 style="margin:0 0 0.75rem">Transactions (filtered)</h2>
+      <div id="transactionsContainer">
+        <div class="no-data">Choose an end year to load transactions</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Change Password Modal -->
+<div class="modal" id="changePasswordModal" aria-hidden="true">
+  <div class="modal-overlay" id="closeChangePassword"></div>
+  <div class="modal-content">
+    <button class="modal-close" id="closeChangePasswordBtn" aria-label="Close">&times;</button>
+    <h2>Change Password</h2>
+    <form id="changePasswordForm">
+      <label>
+        <span>Current Password</span>
+        <input type="password" name="currentPassword" placeholder="Enter current password" required>
+      </label>
+
+      <label>
+        <span>New Password</span>
+        <div class="password-field">
+          <input type="password" id="newPassword" name="newPassword" placeholder="Enter new password" required>
+          <button type="button" id="toggleNewPassword" aria-label="Show password">👁️</button>
+        </div>
+      </label>
+
+      <label>
+        <span>Confirm Password</span>
+        <div class="password-field">
+          <input type="password" id="confirmPassword" placeholder="Confirm new password" required>
+          <button type="button" id="toggleConfirmPassword" aria-label="Show password">👁️</button>
+        </div>
+      </label>
+
+      <button type="submit" class="btn btn-primary">Update Password</button>
+    </form>
+
+    <p id="changePasswordMsg" style="text-align:center;margin-top:1rem;font-size:0.9rem;"></p>
+  </div>
+</div>
+
+
+<script src="script.js"></script>
+</body>
+</html>

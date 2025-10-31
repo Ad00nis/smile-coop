@@ -1,0 +1,491 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Smile Cooperative Nigeria</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="assets/logo.png" type="image/png">
+</head>
+
+  <!-- Login Modal -->
+<div class="modal" id="loginModal" aria-hidden="true">
+  <div class="modal-overlay" id="closeLogin"></div>
+  <div class="modal-content">
+    <button class="modal-close" id="closeLoginBtn" aria-label="Close">&times;</button>
+    <h2>Login</h2>
+    <form id="loginForm">
+      <label>
+        <span>Email</span>
+        <input type="email" name="email" placeholder="Enter your email" required>
+      </label>
+      <label>
+        <span>Password</span>
+        <input type="password" name="password" placeholder="Enter your password" required>
+      </label>
+      <button type="submit" class="btn btn-primary">Login</button>
+    </form>
+  </div>
+</div>
+
+
+<body>
+  <header class="site-header">
+  <div class="container header-inner">
+    <a href="#" class="logo">
+      <img src="assets/logo.png" alt="Smile Cooperative Logo">
+    </a>
+
+     <nav class="main-nav" id="mainNav">
+      <a href="#features">Features</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#mission">Mission & Vision</a>
+      <a href="#faqs">FAQs</a>
+      <a href="#team">Team</a>
+      <a href="#contact">Contact</a>
+      <a href="#" class="btn btn-outline login-mobile" id="loginBtnMobile">Login</a>
+    </nav>
+
+    <div class="cta-group">
+      <a href="#" class="btn btn-outline">Login</a>
+
+    </div>
+
+    <!-- 👇 Important: this must be inside header -->
+    <button class="hamburger" id="hamburgerBtn" aria-label="Menu">
+      &#9776;
+    </button>
+  </div>
+</header>
+
+
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-content">
+          <h1>We simplify your financial needs and operations</h1>
+          <p>
+            Smile Cooperative Society is an independent association of Smile Communications Limited staff, united to meet their common economic and social needs through a jointly owned, democratically controlled enterprise.
+
+We provide low-interest loans, finance household purchases, coordinate bulk buying of consumer goods, support livestock acquisition, and offer financial advisory services.
+
+Join us today to enjoy our benefits and stay informed on cooperative activities.
+          </p>
+          <div class="hero-ctas">
+            <a class="btn btn-ghost" href="#features">Learn More</a>
+          </div>
+        </div>
+        <div class="hero-image">
+         
+        </div>
+      </div>
+    </section>
+
+    <!-- Features -->
+    
+<section id="features" class="section features-section">
+  <div class="container">
+    <h2 class="features-heading">FEATURES</h2>
+    <div class="features-grid">
+      <div class="feature-item">
+        <div class="feature-icon">
+          <img src="assets/savings.svg" alt="Savings" />
+        </div>
+        <h3>Savings</h3>
+        <p>
+         We help our members cultivate the habit of monthly contribution, which most often are deducted from
+source (Salaries paid from employment from Smile Communication). This has helped our members built
+savings, with a view to building up funds for their individual future use.
+        </p>
+      </div>
+
+      <div class="feature-item">
+        <div class="feature-icon">
+          <img src="assets/loan.svg" alt="Loans" />
+        </div>
+        <h3>Loans</h3>
+        <p>
+          Loans are offered to all qualifying members of the Society at the most competitive interest rates
+compared with other financial institution within the country. Terms of payment usually agreed and
+made convenient for members and the Society.
+        </p>
+      </div>
+
+      <div class="feature-item">
+        <div class="feature-icon">
+          <img src="assets/accounting.svg" alt="Accounting and Reporting" />
+        </div>
+        <h3>Accounting and Reporting</h3>
+        <p>
+          All financial transactions are managed by qualified members of the executive committee, and general
+and individual savings and loan accounts are set up for all registered members to manage their savings,
+deposits, withdrawals, loans and other transactions as appropriate. This are easily accessible by
+members through their unique identifier and credentials.
+        </p>
+      </div>
+
+      <div class="feature-item">
+        <div class="feature-icon">
+          <img src="assets/safety.svg" alt="Safety and Security" />
+        </div>
+        <h3>Privacy, Safety and Security of Members Account.</h3>
+        <p>
+          Our system is backed by multi tiered architecture that provides added security to all transactions done
+on our platform. Members are entrusted with specific credentials that gives read only access to their
+individual accounts, excepts for selected members of the executive committee saddled with the
+responsibilities of managing and updating relevant information. These set of people are given read and
+write access for account maintenances purpose and the update done are verified quarterly via
+reconciliation with the available bank statements.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+    
+ <!-- About -->
+<section id="about" class="section alt about-section">
+  <div class="container about-container">
+    <div class="about-left">
+      <div class="about-card">
+        <img src="assets/banner.png" alt="About Smile Cooperative" class="about-illustration">
+      </div>
+    </div>
+
+    <div class="about-right">
+      <div class="about-heading">
+        <h2 class="about-title">ABOUT US</h2>
+        <span class="about-underline" aria-hidden="true"></span>
+      </div>
+
+      <p class="about-intro">
+        Smile Communications Staff (VI) Cooperatives Society Limited was incorporated on the 28th day of
+        November, 2017 in Lagos State under the Nigeria Co-operative Societies Act No 98 of 2004. It is a
+        voluntary association of individuals/legal persons united by common bond, who have come together to
+        pursue their socio-economic goals for their own benefits with high regards to non-members.
+      </p>
+
+      <div class="objectives-wrapper" role="region" aria-label="Objectives">
+        <ul class="objectives-list">
+          <li>To encourage thrift among members so that each member may cultivate the habit of making savings at least once monthly, with a view to building up funds for their individual future use.</li>
+          <li>To enable members to obtain loans from the society at a minimal interest rate with convenient terms of repayment.</li>
+          <li>To promote mutual co-operation among members.</li>
+          <li>To stock consumer and producer goods for distribution to members and non-members (with priority to members) at fair and reasonable prices.</li>
+          <li>To operate warehouses and cold room facilities for the storage of these goods and let out these facilities to interested parties.</li>
+          <li>To acquire acres of land for sale, lease or Estate development to meet the housing needs of
+members or for residential, commercial or industrial purposes as a form of investment for the
+economic benefit of members and other interested parties.</li>
+<li>To undertake and invest in new ventures beneficial to its members and the Society as approved
+by the Management Committee. These include Projects Financing; Feasibility Studies, business
+plan etc.</li>
+<li>To undertake service businesses that will cater for the primary needs of members and other
+patrons managed in the overall interest of members and the Society.</li>
+<li> To encourage fixed deposits from members out of which a fund may be established for giving
+short-term loans to members, to acquire stock of shares and other rewarding ventures.</li>
+<li>To raise funds through share holdings by members in the Society to undertake such other
+activities as are necessary for the attainment of these objects.</li>
+<li>To invest in Agricultural products. This will include crop and animal farming, buying and selling
+of Agricultural products and any other agricultural activity.</li>
+<li>To engage in other economic or social activity as may be approved by the Management
+Committee or the general meeting of members.</li>
+<li>To seek loans for residential, commercial or industrial housing development from banks, the co-
+operative circle and other financial institutions.</li>
+<li>To secure wholesale mortgage, either for on-lending to members or for housing development
+and let or sell such dwellings on mortgage basis.</li>
+<li>To do anything within the law and enter into any transaction which in the Society&#39;s opinion is
+necessary to ensure the proper performance of its functions or the attainment of the above
+listed objects.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+    <!-- Mission & Vision -->
+   <section id="mission" class="section mission-vision">
+  <div class="container">
+    <h2>OUR MISSION & VISION</h2>
+    <div class="underline"></div>
+    <div class="mv-grid">
+      <div class="mv-card">
+        <div class="mv-icon">
+          <img src="assets/mission.svg" alt="Mission icon" />
+        </div>
+        <h4>Our Mission</h4>
+        <p>
+          To add value to the lives of members of the Society through the provision of economic, effective and
+          efficient services aimed at assisting members to bridge gaps of difficult and persistent financial deficit
+          through the pool of resources made available by cooperators. Our mission is based and driven by sound
+          management of financial and other resources with integrity and transparency, while making sure that
+          executive management committee and Staff are optimally motivated in order to deliver quality services
+          to the satisfaction of all stakeholders.
+        </p>
+      </div>
+      <div class="mv-card">
+        <div class="mv-icon">
+          <img src="assets/vision.svg" alt="Vision icon" />
+        </div>
+        <h4>Our Vision</h4>
+        <p>
+          To be a self-sustaining Society organization that will provide goods and services to its members at a
+          reasonable cost with the aim to encourage them towards productivity, savings, investments and equal
+          distribution of surplus for their general well-being of its members.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+    <!-- Services -->
+<section id="services" class="section services-section">
+  <div class="container">
+    <header class="services-header">
+      <h2 class="services-title">Our Services</h2>
+      <span class="services-underline" aria-hidden="true"></span>
+    </header>
+
+    <div class="services-grid" role="list">
+      <article class="service-card" role="listitem">
+        <div class="service-icon" aria-hidden="true">
+        <img src="assets/thrft.svg" alt="thrift">
+        </div>
+        <h3 class="service-name">Thrift Collection</h3>
+        <p class="service-desc">We encourage thrift among members so that each member may cultivate the habit of making savings at least once monthly, with a view to building up funds for their individual future use.</p>
+      </article>
+
+      <article class="service-card" role="listitem">
+        <div class="service-icon" aria-hidden="true"><img src="assets/info.svg" alt="financal advice"></div>
+        <h3 class="service-name">Financial Advisory</h3>
+        <p class="service-desc">We provide professional/Financial Advisory Services - Investment appraisal, feasibility studies, business plans etc.</p>
+      </article>
+
+      <article class="service-card" role="listitem">
+        <div class="service-icon" aria-hidden="true"><img src="assets/loan.svg" alt="sort term loans"></div>
+        <h3 class="service-name">Short Term Loans</h3>
+        <p class="service-desc">We provide short-term loans for our members at a minimal interest rate with convenient terms of repayment.</p>
+      </article>
+
+      <article class="service-card" role="listitem">
+        <div class="service-icon" aria-hidden="true"><img src="assets/thirteenth.svg" alt="thirteenth month"></div>
+        <h3 class="service-name">Thirteen Month Contribution</h3>
+        <p class="service-desc">Advising, encouraging, and assisting members to save for an amount paid at the end of November every year to cater for the yuletide period needs.</p>
+      </article>
+
+      <article class="service-card" role="listitem">
+        <div class="service-icon" aria-hidden="true"><img src="assets/school.svg" alt="school fees"></div>
+        <h3 class="service-name">School Fees Savings</h3>
+        <p class="service-desc">A platform to assist members target and save for their wards' school fees. Payments are usually disbursed in September or as required by the member.</p>
+      </article>
+
+      <article class="service-card" role="listitem">
+        <div class="service-icon" aria-hidden="true"><img src="assets/goods.svg" alt="goods"></div>
+        <h3 class="service-name">Goods and Services</h3>
+        <p class="service-desc">We stock consumer and producer goods for distribution to members and non-members (with priority to members) at fair and reasonable prices.</p>
+      </article>
+
+      <article class="service-card" role="listitem">
+        <div class="service-icon" aria-hidden="true"><img src="assets/warehouse.svg" alt="warehouse"></div>
+        <h3 class="service-name">Warehouse Facilities</h3>
+        <p class="service-desc">We operate warehouses and cold room facilities for the storage of consumer and producer goods and let out these facilities to interested parties.</p>
+      </article>
+
+      <article class="service-card" role="listitem">
+        <div class="service-icon" aria-hidden="true"><img src="assets/appliances.svg" alt="home appliances"></div>
+        <h3 class="service-name">Purchase of Home Appliances</h3>
+        <p class="service-desc">Help members finance purchase of home electrical appliances and other household equipment.</p>
+      </article>
+
+      <article class="service-card" role="listitem">
+        <div class="service-icon" aria-hidden="true"><img src="assets/estates.svg" alt="estates"></div>
+        <h3 class="service-name">Real Estates</h3>
+        <p class="service-desc">We undertake investments in Real Estate and housing developments for the acquisition of our members and other interested parties.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+
+    
+
+  
+<!-- Gallery -->
+<section id="gallery" class="section gallery-section">
+  <div class="container">
+    <div class="section-header">
+      <h2>GALLERY</h2>
+      <div class="underline"></div>
+      <p>Highlights from our projects and events</p>
+    </div>
+
+    <div class="gallery-grid">
+      <!-- 12 images total -->
+      <div class="gallery-item"><img src="assets/photo1.jpg" alt="Gallery image"></div>
+      <div class="gallery-item"><img src="assets/photo2.jpg" alt="Gallery image"></div>
+      <div class="gallery-item"><img src="assets/photo3.jpg" alt="Gallery image"></div>
+      <div class="gallery-item"><img src="assets/photo4.jpg" alt="Gallery image"></div>
+      <div class="gallery-item"><img src="assets/photo5.jpg" alt="Gallery image"></div>
+      <div class="gallery-item"><img src="assets/photo6.jpg" alt="Gallery image"></div>
+      <div class="gallery-item"><img src="assets/photo7.jpg" alt="Gallery image"></div>
+      <div class="gallery-item"><img src="assets/photo8.jpg" alt="Gallery image"></div>
+      <div class="gallery-item hidden"><img src="assets/photo9.jpg" alt="Gallery image"></div>
+      <div class="gallery-item hidden"><img src="assets/photo10.jpg" alt="Gallery image"></div>
+      <div class="gallery-item hidden"><img src="assets/photo11.jpg" alt="Gallery image"></div>
+      <div class="gallery-item hidden"><img src="assets/expresident.jpg" alt="Expresident"></div>
+    </div>
+
+    <div class="gallery-cta">
+      <button id="view-more-btn" class="btn-view">View More Photos →</button>
+    </div>
+  </div>
+</section>
+
+
+
+   
+   <!-- FAQs -->
+<section id="faqs" class="section faq-section"
+  <div class="container">
+    <header class="faq-header">
+      <h2 class="faq-title">Frequently Asked Questions</h2>
+      <span class="faq-underline" aria-hidden="true"></span>
+    </header>
+
+    <div id="faqsGrid" class="faqs-grid" role="list"></div>
+  </div>
+</section>
+
+
+
+<!-- Team -->
+<section id="team" class="section team-section alt">
+  <div class="container">
+    <div class="section-header">
+      <h2>Our Team</h2>
+      <div class="underline"></div>
+    </div>
+
+    <div class="team-grid">
+      <div class="team-card">
+        <img src="assets/President.jpg" alt="Evbogame Kareem">
+        <h2>EVBOGAME KAREEM</h2>
+        <h3 class="role">PRESIDENT</h3>
+      </div>
+
+      <div class="team-card">
+        <img src="assets/financialsecretary.jpg" alt="Akinwande Akin-Aderibigbe">
+        <h2>AKINWANDE AKIN-ADERIBIGBE</h2>
+        <h3 class="role">FINANCIAL SECRETARY</h3>
+      </div>
+
+      <div class="team-card">
+        <img src="assets/secretary.jpg" alt="Ayodeji Ojo">
+        <h2>AYODEJI OJO</h2>
+        <h3 class="role">General Secretary</h3>
+      </div>
+
+      <div class="team-card">
+        <img src="assets/investment.jpg" alt="Investmet committee">
+        <h2>Investment Comittee</h2>
+      </div>
+
+      <div class="team-card">
+        <img src="assets/Treasurer.jpg" alt="Olusola Aiyeola">
+        <h2>OLUSOLA AIYEOLA</h2>
+        <h3 class="role">TREASURER</h3>
+      </div>
+
+
+    </div>
+  </div>
+</section>
+
+
+
+    
+   <!-- Contact -->
+<section id="contact" class="section contact-section">
+  <div class="container">
+    <!-- Heading outside of the grid -->
+    <div class="contact-heading">
+      <h2>Get in Touch</h2>
+      <p>We’d love to hear from you. Reach us through the following channels or fill out the form.</p>
+    </div>
+
+    <div class="contact-grid">
+      <!-- Form comes first -->
+      <form id="contactForm" class="contact-form">
+        <label>
+          <span>Name</span>
+          <input name="name" required placeholder="Enter your name" />
+        </label>
+        <label>
+          <span>Email</span>
+          <input type="email" name="email" required placeholder="Enter your email" />
+        </label>
+        <label>
+          <span>Message</span>
+          <textarea name="message" rows="5" required placeholder="Write your message"></textarea>
+        </label>
+        <button class="btn btn-primary" type="submit">Send Message</button>
+      </form>
+
+      <!-- Contact info second -->
+      <div class="contact-info-card">
+        <h3>CONTACT INFO</h3>
+        <div class="info-item">
+          
+          <span class="icon">📍</span>
+          <div>
+            <strong>Address</strong>
+            <p>230, Awolowo Road, Opposite Falomo Post-Office, Ikoyi, Lagos State, Nigeria</p>
+          </div>
+        </div>
+
+        <div class="info-item">
+          <span class="icon">📞</span>
+          <div>
+            <strong>Phone</strong>
+            <p>+234 (0) 803 200 9573</p>
+<p>+234 (0) 813 713 6669</p>
+<p>+234 (0) 813 813 6644</p>
+<p>+234 (0) 805 627 7968</p>
+          </div>
+        </div>
+
+        <div class="info-item">
+          <span class="icon">✉️</span>
+          <div>
+            <strong>Email</strong>
+            <p>smilecooperative2017@gmail.com</p>
+          </div>
+        </div>
+
+                    </div>
+    </div>
+  </div>
+</section>
+
+
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p><span id="year"></span> Smile Cooperative Society</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Admin Dashboard — Smile Cooperative</title>
+  <link rel="stylesheet" href="styles.css"/>
+   <link rel="icon" href="assets/logo.png" type="image/png">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="/" class="logo">
+        <img src="assets/logo.png" alt="Logo">
+      </a>
+      <h2 style="color: var(--accent-alt);">Admin Dashboard</h2>
+      <button id="logoutBtn" class="btn btn-outline">Logout</button>
+    </div>
+  </header>
+
+  <main class="container admin-main">
+    <section class="admin-card">
+      <h3>Registered Users</h3>
+      <pre id="out">Loading users...</pre>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Smile Cooperative Society</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').innerText = new Date().getFullYear();
+
+    (async () => {
+  const out = document.getElementById('out');
+  const res = await fetch('/api/admin/users', { credentials: 'include' });
+  const text = await res.text();
+  if (!res.ok) {
+    out.innerText = `Error ${res.status}: ${text}`;
+    return;
+  }
+  const j = JSON.parse(text);
+  const table = document.createElement('table');
+table.innerHTML = `
+  <tr>
+    <th>ID</th>
+    <th>Name</th>
+    <th>Email</th>
+    <th>Role</th>
+    <th>Created</th>
+  </tr>
+  ${j.users.map(u => `
+    <tr>
+      <td>${u.id}</td>
+      <td>${u.fullname}</td>
+      <td>${u.email}</td>
+      <td>${u.role}</td>
+      <td>${u.created_at}</td>
+    </tr>
+  `).join('')}
+`;
+out.replaceWith(table);
+
+})();
+
+  </script>
+</body>
+</html>
